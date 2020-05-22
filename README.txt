@@ -16,6 +16,6 @@ To use this program:
 	The numbers represent indices in the alphabet, i.e. 0 = A, 25 = Z. 
 5. Choose a message to encrypt and crack. You can either choose a message from the "messages" collection, or type your own.
 	5a. If you would like to crack a message from the collection, change the message index on lines 64, 66 and 68 to this message. 
-	5b. If you would like to crack your own message, uncomment line 58 and replace the text in between the double quotes with your message. Please ensure your message contains only capital letters, with no lower case letters, whitespace, punctuation or numbers. Make sure you change lines 64, 66, and 68 to be applied to your message.
+	5b. If you would like to crack your own message, go to line 58 and replace the text in between the double quotes with your message. Please ensure your message contains only capital letters, with no lower case letters, whitespace, punctuation or numbers. Make sure you change lines 64, 66, and 68 so that they apply to your message.
 6. Run main.cpp in the IDE.
 7. The possible correct settings found and the potential decrypts will be printed to the console. Please note that this program has an average runtime of 57 minutes. 

@@ -33,18 +33,6 @@ std::string formatOutput(std::string s){
     return formatted;
 }
 
-/*double getScore(std::string message){
-    double currentScore = 0.0;
-    int typeOfScoring = 2;
-    std::string filePath = "english_bigrams.csv";
-    for (int k = 0; k < message.length() - (typeOfScoring - 1); k++) {
-        std::string substr = message.substr(k, typeOfScoring);
-        double score = searchFile(filePath, substr);
-        currentScore += score;
-    }
-    return currentScore;
-}*/
-
 int main() {
 
     Plugboard plugboard = Plugboard(LetterPair('G', 'P'), LetterPair('M', 'X'),
@@ -66,42 +54,6 @@ int main() {
 
         messages.push_back(currentMessage);
     }
-
-    //testing sameKey method
-    /*int correct = 0;
-    int j;
-    std::cout << std::boolalpha;
-    //messages encrypted using same setting
-    for (int i = 0; i < 2000; i++){
-        enigma.randomise();
-        RotorSet r = enigma.rotors;
-        j = rand() % 100;
-        std::string m1 = enigma.encrypt(messages[j]);
-        enigma.rotors = r;
-        j = rand() % 100;
-        std::string m2 = enigma.encrypt(messages[j]);
-        bool b = sameKey(m1, m2);
-        if (b == 1){
-            correct++;
-        }
-    }
-
-    //messages encrypted using different settings
-    for (int i = 0; i < 2000; i++){
-        enigma.randomise();
-        RotorSet r = enigma.rotors;
-        j = rand() % 100;
-        std::string m1 = enigma.encrypt(messages[j]);
-        enigma.randomise();
-        j = rand() % 100;
-        std::string m2 = enigma.encrypt(messages[j]);
-        bool b = sameKey(m1, m2);
-        if (b == 0){
-            correct++;
-        }
-    }
-
-    std::cout << ((double)correct/4000)*100;*/
 
     std::string message = "BEFOREWRITINGTHISHISTORYIHAVENOTHADTHEUNPLEASANTTASKOFREADINGVOLUMINOUSRECORDSANDSCANNINGINNUMERABLEDOCUMENTS1WEHAVENEVERBEENENTHUSIASTICKEEPERSOFDIARIESANDLOGBOOKSANDHAVEHABITUALLYDESTROYEDRECORDSWHENTHEIRPERIODOFUTILITYWASOVERANDITISTHEMERESTCHANCETHATHASPRESERVEDAFEWDOCUMENTSOFINTERESTHARDLYANYOFTHESEAREDATEDSINCEMARCHTHEWEEKLYREPORTTOTHEDIRECTORPROVIDESAVALUABLERECORDOFOURACTIVITIESBUTITISNATURALLYTHISMORERECENTPERIODWHICHHUMANMEMORYMOSTEASILYRECALLSANDITISTHELACKOFDOCUMENTARYEVIDENCEABOUTEARLYDAYSWHICHISTHEMOSTSERIOUS";
 

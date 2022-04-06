@@ -1,4 +1,4 @@
-This program is a modern solution to crack the Enigma cipher, using language analysis and brute-force style algorithms.
+This program is a modern solution to crack the Enigma cipher, using language analysis and brute-force style algorithms. This work was done as part of my third year dissertation in my Computer Science undergraduate degree.
 
 Dependencies to be able to use this program:
 1. Make sure you have a C/C++ compiler installed on your machine. 
@@ -18,4 +18,4 @@ To use this program:
 	5a. If you would like to crack a message from the collection, change the message index on lines 64, 66 and 68 to this message. 
 	5b. If you would like to crack your own message, go to line 58 and replace the text in between the double quotes with your message. Please ensure your message contains only capital letters, with no lower case letters, whitespace, punctuation or numbers. Make sure you change lines 64, 66, and 68 so that they apply to your message.
 6. Run main.cpp in the IDE.
-7. The possible correct settings found and the potential decrypts will be printed to the console. Please note that this program has an average runtime of 57 minutes. 
+7. The possible correct settings found and the potential decrypts will be printed to the console. Please note that this program has a runtime of between 25 and 70 minutes. 
